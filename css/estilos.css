@@ -39,13 +39,14 @@ header nav ul{
 
 header nav ul li{
     list-style: none;
+    margin-left: -8px;
     
 }
 
 header nav ul li a{
     text-decoration: none;
     color: bisque;
-    padding: 8px;
+    padding: 5px;
 }
 
 header nav ul li a:hover{
@@ -96,48 +97,54 @@ main{
     border: 3px solid black ;    
 }
 
-.fotos{
-    justify-content: center;
-    align-content: center;
-}
+
 
 
 .pfoto{
-    display: flex;
+    
     background-color:rgb(97, 72, 28);
     color: white;
     font-style: italic;
-    
+    font-size: 0.6rem;
     padding-left: 8px;
     border: 3px solid black;
     width: 100%;
-    height: 30px;
+    height: 20px;
 
 }
 .foto1{
     grid-area: foto1;
     width: 80px;
     height: 80px;
+    margin-top: -20px;
 }
+
+
+
 .foto2{
     grid-area: foto2;
     width: 80px;
     height: 80px;
+    margin-top: -20px;
 }
 .foto3{
     grid-area: foto3;
     display: none;
 }
+
 .foto4{
     grid-area: foto4;
     display: none;
 }
 
+
 /*footer*/
-footer{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.5rem;
+footer div h5{
+    font-size: 0.6rem;
+    text-align:center;
+    text-transform: bold;
+    
+    
 }
 
 /* formulario de contacto*/
@@ -221,7 +228,7 @@ form textarea{
     
     .subtitulo{
             text-align: center;
-            margin-top: 10px;
+            margin-top: 50px;
             margin-bottom: 20px;
             margin-left: 20px;
             font-size: 2rem;
@@ -251,6 +258,8 @@ form textarea{
             display: flex;
             text-align: center;
         }
+
+
         form{
             width: 60%;
             
@@ -271,7 +280,7 @@ form textarea{
 @media screen and (min-width: 1024px)
 {
     .container-index{
-        height: 90vh;
+        height: 150vh;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 40% 25% 25%;
         column-gap: 0.5rem;
@@ -304,7 +313,7 @@ form textarea{
     
     .subtitulo{
             text-align: center;
-            margin-top: 50px;
+            margin-top: 150px;
             margin-bottom: 20px;
             margin-left: 20px;
             font-size: 3rem;
@@ -405,11 +414,11 @@ form textarea{
                 }
                 
 
-            footer{
+            /*footer{
                 margin-top: 20px;
                 text-align: center;
                 font-size: 1.0rem;
-                }
+                }*/
             /*form{
                 width: 40%;
                 
