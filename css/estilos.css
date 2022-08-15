@@ -45,6 +45,7 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
+    
     color: bisque;
     padding: 5px;
 }
@@ -53,6 +54,7 @@ header nav ul li a:hover{
     font-size: 80%;
     color:#A47E3B;
 }
+
 
 /*estilos del contenedor padre del index*/
 
@@ -73,7 +75,7 @@ header nav ul li a:hover{
 
 /*estilos de main index*/
 
-main{
+.container-index main{
     grid-area: main;
     
     width: 100%;
@@ -97,11 +99,7 @@ main{
     border: 3px solid black ;    
 }
 
-
-
-
-.pfoto{
-    
+.pfoto{   
     background-color:rgb(97, 72, 28);
     color: white;
     font-style: italic;
@@ -110,23 +108,22 @@ main{
     border: 3px solid black;
     width: 100%;
     height: 20px;
-
 }
+
 .foto1{
     grid-area: foto1;
     width: 80px;
     height: 80px;
-    margin-top: -20px;
+    margin-top: -25px;
 }
-
-
 
 .foto2{
     grid-area: foto2;
     width: 80px;
     height: 80px;
-    margin-top: -20px;
+    margin-top: -25px;
 }
+
 .foto3{
     grid-area: foto3;
     display: none;
@@ -141,10 +138,13 @@ main{
 /*footer*/
 footer div h5{
     font-size: 0.6rem;
+    justify-items: center;
     text-align:center;
-    text-transform: bold;
-    
-    
+    text-transform: bold;    
+}
+footer div a{
+    width: 50px;
+    height: 50px;
 }
 
 /* formulario de contacto*/
@@ -194,6 +194,71 @@ form textarea{
     cursor: pointer;
 }
 
+/*navegador especies*/
+
+.bg-titulo1{
+    font-size: 8vw;
+}
+
+.bg-menu{
+    background-color: rgb(97, 72, 28);
+    height: auto;
+}
+
+.color2{
+    color: #fff;
+    
+}
+.tx-inicio{
+    text-align: center;
+    color: #f3c069;
+        
+}
+
+/*main especies*/
+
+.bg-titulo2{
+    font-size: 6vw;
+    margin: 20px 0px;
+    text-transform: capitalize;
+}
+.bg-subtitulo{
+    text-align: start;
+    font-size: 3vw;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+.psubt{
+    text-align: justify;
+    font-size: x-small;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.h3{
+    font-size: 4vw;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background-color: #5a3b05;
+    color: #f3c069;
+}
+.tx-img img{
+    float: left;
+    margin-right: 15px;
+    width: 80px;
+}
+.pint{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-small;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.container-main h1{
+    text-align: center;
+}
+
 
 /*screen a 600px*/
 
@@ -225,7 +290,8 @@ form textarea{
         font-size: 160%;
                 }                      
                 
-    
+    /*main index 600px*/
+
     .subtitulo{
             text-align: center;
             margin-top: 50px;
@@ -241,25 +307,58 @@ form textarea{
             background-color:rgb(97, 72, 28);
             color: whitesmoke;
             }
+
+        .foto1{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            
+
+        }   
+        .foto2{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            
+        }
+        
         .foto3{
-            grid-area: foto3;
-            display: flex;
+            margin-top: -10px;
+            display: inline;
+            text-align: center;
+            
         }
         .foto4{
-            grid-area: foto4;
-            display: flex;
+            margin-top: -10px;
+            display: inline;
+            text-align: center;    
+        }
+
+        .pfoto{
+            font-size: 0.8rem;
+            height: 25px;
+        }
+
+        /*especies*/
+        .psubt{
             
-        }.pfoto3{
-            display: flex;
-            text-align: center;
+            font-size: smaller;   
+        }
         
-        }
-        .pfoto4{
-            display: flex;
-            text-align: center;
+        .pint{
+            font-size: smaller;
         }
 
+        /*footer*/
+    footer div h5{
+        height: 50px;
+        font-size: 1rem;
+        
+        
+}   
+        
 
+        /*formulario en 600px*/
         form{
             width: 60%;
             
@@ -273,6 +372,10 @@ form textarea{
             font-size: 15px;
         }*/
     } 
+
+    /*navegador especies*/
+
+    
 
 
 /*screen a 1024*/
@@ -319,16 +422,47 @@ form textarea{
             font-size: 3rem;
         }
         
-        .pmain{
+    .pmain{
             margin: 30px;
             padding: 2px 20px;
             font-size: 1.4rem;
             }
+
+            /*especies*/
+        .bg-titulo1{
+            font-size: 6vw;
+        }  
+        .bg-titulo2{
+            font-size: 3.8vw;
+        
+        }
+        .bg-subtitulo{
+            
+            font-size: 2vw;
+            
+        }
+        .h3{
+            font-size: 2.5vw;
+        }
+        .psubt{
+                
+            font-size: small;   
+        }
+
+        .pint{
+            font-size: small;
+        }
+
         footer{
             margin-top: 20px;
             text-align: center;
             font-size: 1.0rem;
             }
+
+    
+    
+    
+    
         /*form{
             width: 40%;
             
@@ -346,7 +480,8 @@ form textarea{
     @media screen and (min-width: 1440px)
     {
         .container-index{
-            height: 90vh;
+            
+            height: 100vh;
             grid-template-columns: 1fr 1fr ;
             grid-template-rows: 40% 25% 25%;
             column-gap: 0.5rem;
@@ -356,7 +491,9 @@ form textarea{
                 "foto1 foto2"
                 "foto3 foto4"
     
-                    }
+                }
+
+        /*encabezados 1440px*/
     
         header h1{
             font-size: 5rem;
@@ -369,67 +506,87 @@ form textarea{
             height: 80px;
                     } 
         header nav ul li a{                    
-            font-size: 2rem;
+            
             padding-left: 50px;
             
                     }   
         header nav ul li a:hover{
-            font-size: 250%;
+            font-size: 150%;
+            
                     }                      
                     
-        
+        /*main index 1440*/
         .subtitulo{
-                text-align: center;
-                margin-top: 50px;
-                margin-bottom: 20px;
-                margin-left: 20px;
-                font-size: 3rem;
-            }
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            font-size: 3rem;
+                }
             
-            .pmain{
-                margin: 30px;
-                padding: 2px 20px;
-                font-size: 1.4rem;
+        .pmain{
+            margin: 30px;
+            padding: 2px 20px;
+            font-size: 1.4rem;
                 }
-                .foto1{
-                    grid-area: foto1;
-                    width: 200px;
-                    height: 200px;
-                }
-                .foto2{
-                    grid-area: foto2;
-                    width: 200px;
-                    height: 200px;
 
-                }
-                .foto3{
-                    grid-area: foto3;
-                    width: 200px;
-                    height: 200px;
-                }
-                .foto4{
-                    grid-area: foto4;
-                    width: 200px;
-                    height: 200px;
-                }
-                
+        .foto1{
+            grid-area: foto1;
+            width: 200px;
+            height: 200px;
+            }
 
-            /*footer{
-                margin-top: 20px;
-                text-align: center;
-                font-size: 1.0rem;
-                }*/
-            /*form{
-                width: 40%;
+        .foto2{
+            grid-area: foto2;
+            width: 200px;
+            height: 200px;
+            }
+
+        .foto3{
+            grid-area: foto3;
+            width: 200px;
+            height: 200px;
+            }
+
+        .foto4{
+            grid-area: foto4;
+            width: 200px;
+            height: 200px;
+            }
+
+            /*main especies*/
+
+            .bg-titulo1{
+                font-size: 5vw;
+            }  
+            .bg-titulo2{
+                font-size: 2.8vw;
+            
+            }
+            .bg-subtitulo{
+                font-style: italic;
+                font-size: 1.5vw;
+                margin-bottom: 15px;
                 
-                
-                }  
-            #boton{
-                margin-left: 92px;
-                
-                } */
-                
+            }
+            .h3{
+                font-size: 1.8vw;
+            }
+            .psubt{
+                    
+                font-size: large;   
+            }
+    
+            .pint{
+                font-size: large;
+            }
+
+            /*footers*/
+        footer div h5{
+            font-size: 1.5rem;
+            text-align:start;
+                }
+        footer div a{
+            text-align: end;
         }
-    
-    
-    
+}
