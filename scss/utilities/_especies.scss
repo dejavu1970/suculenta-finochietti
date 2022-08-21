@@ -1,0 +1,42 @@
+
+/*main especies*/
+.cont-main{
+    .bg-titulo2{
+    font-size: 1.5em;
+    margin: 20px 0px;
+    text-transform: capitalize;
+    }
+    .bg-subtitulo{
+        text-align: start;
+        font-size: 1em;
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-family: 'Roboto', sans-serif;
+    }
+    .psubt{
+        text-align: justify;
+        font-size: 0.7em;
+        line-height: 1.5;   
+    }
+    .h3{
+        font-size: 1em;
+        font-family: 'Roboto', sans-serif;
+        text-transform: capitalize;
+        background-color:$col-sec;
+        color: $col-text-contraste;
+    }
+    .tx-img img{
+        float: left;
+        margin-right: 15px;
+        width: 80px;
+    }
+    .pint{
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.7em;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .container-main h1{
+        text-align: center;
+    }
+}

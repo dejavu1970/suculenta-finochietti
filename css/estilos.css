@@ -1,435 +1,141 @@
 /*reset*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/*estilos generales*/
+body {
+  background-color: #A47E3B;
+  width: 100%;
+  height: auto;
+  margin: 10px auto; }
 
-body{
-    background-color: #A47E3B ; 
-}
-
-/* estilos header todos*/
-
-header{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-header h1{
-    
-    font-size: 2.5rem;
-}
-
-header nav{
+/*header*/
+header {
+  width: 100%;
+  height: auto; }
+  header h1 {
     width: 100%;
-    height: 25px;
-    background-color: rgb(97, 72, 28);
-}
-
-header nav ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 0.8%;
-
-}
-
-header nav ul li{
-    list-style: none;
-    margin-left: -8px;
-    
-}
-
-header nav ul li a{
+    height: 60px;
+    background-color: #A47E3B;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    text-align: center; }
+  header nav {
+    width: 100%;
+    height: 50px;
+    background-color: #61481c;
+    color: #fff;
+    margin-top: 10px; }
+  header ul {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 10px; }
+  header li {
+    display: inline;
+    list-style: none; }
+  header a {
+    float: left;
     text-decoration: none;
-    color: bisque;
-    padding: 5px;
-}
-
-header nav ul li a:hover{
-    font-size: 80%;
-    color:#A47E3B;
-}
-
-/*estilos del contenedor padre del index*/
-
-.container-index{
-    display: grid;
-    height: 85vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70% 30%;
-    column-gap: 1rem;
-    grid-template-areas: 
-        "main main "
-        "foto1 foto2 ";
-        justify-items: center;
-        justify-content: center;
-        align-items: center;
-
-}
-
-/*estilos de main index*/
-
-main{
-    grid-area: main;
-    
-    width: 100%;
-}
-
-.subtitulo{
-    text-align: start;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    text-decoration:underline;
-    text-transform: capitalize;
-}
-
-.pmain{
-    
-    margin: 5px;
-    padding: 2px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
-    text-align: justify;
-    border: 3px solid black ;    
-}
-
-
-
-
-.pfoto{
-    
-    background-color:rgb(97, 72, 28);
-    color: white;
-    font-style: italic;
-    font-size: 0.6rem;
-    padding-left: 8px;
-    border: 3px solid black;
-    width: 100%;
-    height: 20px;
-
-}
-.foto1{
-    grid-area: foto1;
-    width: 80px;
-    height: 80px;
-    margin-top: -20px;
-}
-
-
-
-.foto2{
-    grid-area: foto2;
-    width: 80px;
-    height: 80px;
-    margin-top: -20px;
-}
-.foto3{
-    grid-area: foto3;
-    display: none;
-}
-
-.foto4{
-    grid-area: foto4;
-    display: none;
-}
-
+    color: #fff;
+    padding-left: 10px; }
+  header a:hover {
+    color: #d07b05; }
 
 /*footer*/
-footer div h5{
-    font-size: 0.6rem;
-    text-align:center;
-    text-transform: bold;
-    
-    
-}
+footer div {
+  justify-items: center;
+  align-items: center; }
 
+footer h3 {
+  font-size: 0.6rem;
+  justify-items: center;
+  text-align: center;
+  text-transform: bold; }
+
+footer a {
+  margin-left: 5px; }
+
+footer img {
+  margin-top: -5px;
+  width: 25px;
+  height: 25px; }
+
+/*importar estilos index*/
+/*estilo del header*/
+/*importar estilos nosotros*/
+/*importar estilos especies*/
+/*main especies*/
+.cont-main .bg-titulo2 {
+  font-size: 1.5em;
+  margin: 20px 0px;
+  text-transform: capitalize; }
+
+.cont-main .bg-subtitulo {
+  text-align: start;
+  font-size: 1em;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif; }
+
+.cont-main .psubt {
+  text-align: justify;
+  font-size: 0.7em;
+  line-height: 1.5; }
+
+.cont-main .h3 {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  background-color: #61481c;
+  color: #fff; }
+
+.cont-main .tx-img img {
+  float: left;
+  margin-right: 15px;
+  width: 80px; }
+
+.cont-main .pint {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7em;
+  line-height: 1.5;
+  text-align: justify; }
+
+.cont-main .container-main h1 {
+  text-align: center; }
+
+/*importar estilos cuidados*/
+/*importar estilos contacto*/
 /* formulario de contacto*/
-
-form{
-    width: auto;
-    margin: auto;
-    background:rgb(97, 72, 28);
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 7px;
-    font-family: 'Uchen', serif;
-
-}
-
-form h2{
-    color: white;
+form {
+  width: auto;
+  margin: auto;
+  background: #61481c;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+  font-family: 'Uchen', serif; }
+  form h2 {
+    color: #fff;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 20px;
-}
-
-form input, textarea{
+    margin-bottom: 20px; }
+  form input, form textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
     font-size: 17px;
-    border: none;
-}
-
-form textarea{
+    border: none; }
+  form textarea {
     min-height: 100px;
     max-height: 200px;
-    max-width: 100%;
-}
-
-#boton{
-    background: white;
+    max-width: 100%; }
+  form #boton {
+    background: #fff;
     padding: 20px;
-    font-size: 20px;
-}
-
-#boton:hover{
+    font-size: 1.2em; }
+  form:hover {
     background-color: #A47E3B;
-    color:white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-
-/*screen a 600px*/
-
-@media screen and (min-width: 600px)
-{
-    .container-index{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 60% 40%;
-        column-gap: 1rem;
-        grid-template-areas: 
-            "main main main main"
-            "foto1 foto2 foto3 foto4"
-                }
-
-    header h1{
-        font-size: 3.5rem;
-        margin-bottom: 10px;
-                }
-                
-    header nav{
-            
-        height: 40px;
-                } 
-    header nav ul li a{                    
-        font-size: 1.1rem;
-        padding: 8px;
-                }   
-    header nav ul li a:hover{
-        font-size: 160%;
-                }                      
-                
-    
-    .subtitulo{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            margin-left: 20px;
-            font-size: 2rem;
-        }
-        
-        .pmain{
-            margin: 30px;
-            padding: 2px 20px;
-            font-size: 1.2rem;
-            background-color:rgb(97, 72, 28);
-            color: whitesmoke;
-            }
-        .foto3{
-            grid-area: foto3;
-            display: flex;
-        }
-        .foto4{
-            grid-area: foto4;
-            display: flex;
-            
-        }.pfoto3{
-            display: flex;
-            text-align: center;
-        
-        }
-        .pfoto4{
-            display: flex;
-            text-align: center;
-        }
-
-
-        form{
-            width: 60%;
-            
-            }  
-        /* #boton{
-            margin-left: 80px;
-        
-            width: 50%;
-            background: white;
-            padding: 20px;
-            font-size: 15px;
-        }*/
-    } 
-
-
-/*screen a 1024*/
-
-@media screen and (min-width: 1024px)
-{
-    .container-index{
-        height: 150vh;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 40% 25% 25%;
-        column-gap: 0.5rem;
-        row-gap: 2rem;
-        grid-template-areas: 
-            "main main "
-            "foto1 foto2"
-            "foto3 foto4"
-
-                }
-
-    header h1{
-        font-size: 5rem;
-        margin-bottom: 10px;
-                }
-                
-    header nav{
-        
-        height: 80px;
-                } 
-    header nav ul li a{                    
-        font-size: 2rem;
-        padding-left: 50px;
-        
-                }   
-    header nav ul li a:hover{
-        font-size: 160%;
-                }                      
-                
-    
-    .subtitulo{
-            text-align: center;
-            margin-top: 150px;
-            margin-bottom: 20px;
-            margin-left: 20px;
-            font-size: 3rem;
-        }
-        
-        .pmain{
-            margin: 30px;
-            padding: 2px 20px;
-            font-size: 1.4rem;
-            }
-        footer{
-            margin-top: 20px;
-            text-align: center;
-            font-size: 1.0rem;
-            }
-        /*form{
-            width: 40%;
-            
-            
-            }  
-        #boton{
-            margin-left: 92px;
-            
-            } */
-            
-    }
-
-    /*screen a 1440px*/
-
-    @media screen and (min-width: 1440px)
-    {
-        .container-index{
-            height: 90vh;
-            grid-template-columns: 1fr 1fr ;
-            grid-template-rows: 40% 25% 25%;
-            column-gap: 0.5rem;
-            row-gap: 2rem;
-            grid-template-areas: 
-                "main main "
-                "foto1 foto2"
-                "foto3 foto4"
-    
-                    }
-    
-        header h1{
-            font-size: 5rem;
-            margin-bottom: 10px;
-            margin-top: 15px;
-                    }
-                    
-        header nav{
-            
-            height: 80px;
-                    } 
-        header nav ul li a{                    
-            font-size: 2rem;
-            padding-left: 50px;
-            
-                    }   
-        header nav ul li a:hover{
-            font-size: 250%;
-                    }                      
-                    
-        
-        .subtitulo{
-                text-align: center;
-                margin-top: 50px;
-                margin-bottom: 20px;
-                margin-left: 20px;
-                font-size: 3rem;
-            }
-            
-            .pmain{
-                margin: 30px;
-                padding: 2px 20px;
-                font-size: 1.4rem;
-                }
-                .foto1{
-                    grid-area: foto1;
-                    width: 200px;
-                    height: 200px;
-                }
-                .foto2{
-                    grid-area: foto2;
-                    width: 200px;
-                    height: 200px;
-
-                }
-                .foto3{
-                    grid-area: foto3;
-                    width: 200px;
-                    height: 200px;
-                }
-                .foto4{
-                    grid-area: foto4;
-                    width: 200px;
-                    height: 200px;
-                }
-                
-
-            /*footer{
-                margin-top: 20px;
-                text-align: center;
-                font-size: 1.0rem;
-                }*/
-            /*form{
-                width: 40%;
-                
-                
-                }  
-            #boton{
-                margin-left: 92px;
-                
-                } */
-                
-        }
-    
-    
-    
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer; }

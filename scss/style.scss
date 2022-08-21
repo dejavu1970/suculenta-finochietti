@@ -1,0 +1,101 @@
+//importando archivos secundarios
+
+@import "utilities/variables";
+
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $col-prin;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: auto;
+    h1{
+        width: 100%;
+        height: 60px;
+        background-color: $col-prin;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 20px;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color: $col-sec;
+        color: $col-text-contraste;
+        margin-top: 10px;
+    }
+    ul{
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 10px;
+    }
+    li{
+        display: inline;
+        list-style: none;
+    }
+    a{
+        float: left;
+        text-decoration: none;
+        color: $col-text-contraste;
+        padding-left: 10px;
+    }
+    a:hover{
+        color: $col-li-contraste;
+    }
+}
+
+/*footer*/
+
+footer{
+    div{
+        justify-items: center;
+        align-items: center;
+    }
+    h3{
+        font-size: 0.6rem;
+        justify-items: center;
+        text-align:center;
+        text-transform: bold;    
+    }
+    a{
+        margin-left: 5px;
+    }
+    img{
+        margin-top: -5px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+//importando archivos secundarios
+/*importar estilos index*/
+@import "utilities/index";
+
+
+/*importar estilos nosotros*/
+@import "utilities/nosotros";
+
+/*importar estilos especies*/
+@import "utilities/especies";
+
+/*importar estilos cuidados*/
+@import "utilities/cuidados";
+
+/*importar estilos contacto*/
+@import "utilities/contacto";
+
+

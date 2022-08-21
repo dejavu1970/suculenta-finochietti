@@ -1,0 +1,44 @@
+
+
+/* formulario de contacto*/
+
+form{
+    width: auto;
+    margin: auto;
+    background:$col-sec;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-family: 'Uchen', serif;
+    h2{
+        color: $col-text-contraste;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    input, textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        font-size: 17px;
+        border: none;
+    }
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    #boton{
+        background: $col-text-contraste;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+    &:hover{
+        background-color: $col-prin;
+        color:$col-text-contraste;
+        font-size: 2em;
+        cursor: pointer;
+    }
+}
+
+
