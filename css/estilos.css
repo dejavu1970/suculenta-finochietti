@@ -1,50 +1,43 @@
 /*reset*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/*estilos generales*/
+body {
+  background-color: #A47E3B;
+  width: 100%;
+  height: auto;
+  margin: 10px auto; }
 
-body{
-    background-color: #A47E3B ; 
-}
-
-/* estilos header todos*/
-
-header{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-header h1{
-    
-    font-size: 2.5rem;
-}
-
-header nav{
+/*header*/
+header {
+  width: 100%;
+  height: auto; }
+  header h1 {
     width: 100%;
-    height: 25px;
-    background-color: rgb(97, 72, 28);
-}
-
-header nav ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 0.8%;
-
-}
-
-header nav ul li{
-    list-style: none;
-    margin-left: -8px;
-    
-}
-
-header nav ul li a{
+    height: 60px;
+    background-color: #A47E3B;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    text-align: center; }
+  header nav {
+    width: 100%;
+    height: 50px;
+    background-color: #61481c;
+    color: #fff;
+    margin-top: 10px; }
+  header ul {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 10px; }
+  header li {
+    display: inline;
+    list-style: none; }
+  header a {
+    float: left;
     text-decoration: none;
+<<<<<<< HEAD
     
     color: bisque;
     padding: 5px;
@@ -146,49 +139,108 @@ footer div a{
     width: 50px;
     height: 50px;
 }
+=======
+    color: #fff;
+    padding-left: 10px; }
+  header a:hover {
+    color: #d07b05; }
 
+/*footer*/
+footer div {
+  justify-items: center;
+  align-items: center; }
+>>>>>>> sass
+
+footer h3 {
+  font-size: 0.6rem;
+  justify-items: center;
+  text-align: center;
+  text-transform: bold; }
+
+footer a {
+  margin-left: 5px; }
+
+footer img {
+  margin-top: -5px;
+  width: 25px;
+  height: 25px; }
+
+/*importar estilos index*/
+/*estilo del header*/
+/*importar estilos nosotros*/
+/*importar estilos especies*/
+/*main especies*/
+.cont-main .bg-titulo2 {
+  font-size: 1.5em;
+  margin: 20px 0px;
+  text-transform: capitalize; }
+
+.cont-main .bg-subtitulo {
+  text-align: start;
+  font-size: 1em;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif; }
+
+.cont-main .psubt {
+  text-align: justify;
+  font-size: 0.7em;
+  line-height: 1.5; }
+
+.cont-main .h3 {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  background-color: #61481c;
+  color: #fff; }
+
+.cont-main .tx-img img {
+  float: left;
+  margin-right: 15px;
+  width: 80px; }
+
+.cont-main .pint {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7em;
+  line-height: 1.5;
+  text-align: justify; }
+
+.cont-main .container-main h1 {
+  text-align: center; }
+
+/*importar estilos cuidados*/
+/*importar estilos contacto*/
 /* formulario de contacto*/
-
-form{
-    width: auto;
-    margin: auto;
-    background:rgb(97, 72, 28);
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 7px;
-    font-family: 'Uchen', serif;
-
-}
-
-form h2{
-    color: white;
+form {
+  width: auto;
+  margin: auto;
+  background: #61481c;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+  font-family: 'Uchen', serif; }
+  form h2 {
+    color: #fff;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 20px;
-}
-
-form input, textarea{
+    margin-bottom: 20px; }
+  form input, form textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
     font-size: 17px;
-    border: none;
-}
-
-form textarea{
+    border: none; }
+  form textarea {
     min-height: 100px;
     max-height: 200px;
-    max-width: 100%;
-}
-
-#boton{
-    background: white;
+    max-width: 100%; }
+  form #boton {
+    background: #fff;
     padding: 20px;
-    font-size: 20px;
-}
-
-#boton:hover{
+    font-size: 1.2em; }
+  form:hover {
     background-color: #A47E3B;
+<<<<<<< HEAD
     color:white;
     font-size: 30px;
     cursor: pointer;
@@ -590,3 +642,8 @@ form textarea{
             text-align: end;
         }
 }
+=======
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer; }
+>>>>>>> sass
