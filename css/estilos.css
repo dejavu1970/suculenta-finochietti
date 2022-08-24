@@ -66,44 +66,6 @@ footer img {
 /*importar estilos nosotros*/
 /*importar estilos especies*/
 /*main especies*/
-.cont-main .bg-titulo2 {
-  font-size: 1.5em;
-  margin: 20px 0px;
-  text-transform: capitalize; }
-
-.cont-main .bg-subtitulo {
-  text-align: start;
-  font-size: 1em;
-  text-transform: capitalize;
-  text-decoration: underline;
-  font-family: 'Roboto', sans-serif; }
-
-.cont-main .psubt {
-  text-align: justify;
-  font-size: 0.7em;
-  line-height: 1.5; }
-
-.cont-main .h3 {
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
-  background-color: #61481c;
-  color: #fff; }
-
-.cont-main .tx-img img {
-  float: left;
-  margin-right: 15px;
-  width: 80px; }
-
-.cont-main .pint {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.7em;
-  line-height: 1.5;
-  text-align: justify; }
-
-.cont-main .container-main h1 {
-  text-align: center; }
-
 /*importar estilos cuidados*/
 /*importar estilos contacto*/
 /* formulario de contacto*/
