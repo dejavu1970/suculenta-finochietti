@@ -3,7 +3,7 @@
 /* formulario de contacto*/
 
 form{
-    width: auto;
+    width: 50%;
     margin: auto;
     background:$col-sec;
     padding: 10px 20px;
@@ -33,12 +33,26 @@ form{
         padding: 20px;
         font-size: 1.2em;
     }
-    &:hover{
-        background-color: $col-prin;
-        color:$col-text-contraste;
-        font-size: 2em;
+        #boton:hover{
+        background-color: map-get($map: $bg-form-xl, $key:bghovxl );
         cursor: pointer;
     }
+}
+
+@media screen and (max-width:768px){
+
+    form{
+        background-color: map-get($map: $bg-form-med, $key: bgmed)
+    }
+        #boton{
+            background: $col-text-contraste;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+            #boton:hover{
+                background-color: map-get($map: $bg-form-med, $key: bghovmed );
+            }
+        
 }
 
 

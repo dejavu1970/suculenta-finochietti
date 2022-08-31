@@ -1,3 +1,91 @@
-/*estilo del header*/
 
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/mapas";
+@import "../base/listas";
 
+/*header
+header{
+    width: 100%;
+    height: 200px;
+    .titulo{
+                text-align: center;
+        font-size: 5em;
+        width: 100%;
+        height: 100px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 20px 0 20px;
+        
+        
+    }
+    nav{
+        width: 80%;
+        margin: auto;
+        height: 60px;
+        background-color: $col-sec;
+        color: $col-text-contraste;
+        justify-content: center;
+        
+        
+    }
+    ul{
+        padding-top: 10px;
+        margin-left: -30px;
+        justify-items: center;
+    }
+    li{
+        display: inline;
+        list-style: none;
+        
+    }
+    a{
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: $col-text-contraste;
+        padding-left: 50px;
+    }
+    a:hover{
+        color: $col-li-contraste;
+        font-size: 150%;
+    }
+}*/
+
+.main-index{
+    @include wid-heig;
+    .subtitulo{
+        text-transform: capitalize;
+        text-align: center;
+        padding: 30px;
+        font-size: 3.2rem;
+        text-decoration: dotted;
+    }
+    .pmain{
+        font-family: $texto-parrafo;
+        text-align: justify;
+        @include bordes;
+        padding: 15px;
+
+    }
+    .cajadefotos{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px;
+        padding: 30px;
+
+    }
+    .foto1{
+    }
+    .foto2{
+        
+    }
+    .foto3{
+        
+    }
+    .foto4{
+        
+    }
+    .pfoto{
+        text-align: center;
+        @include bordes;
+    }
+}
