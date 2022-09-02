@@ -9,56 +9,48 @@ body {
   width: 100vw;
   height: 100vh; }
 
-@media screen and (max-width: 768px) {
+/*header*/
+.titulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200px; }
+  .titulo h1 {
+    font-size: 5vw;
+    width: 100%;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 20px 0 20px;
+    text-align: center; }
+  .titulo nav {
+    width: 80%;
+    margin: 50px auto 50px auto;
+    height: 60px;
+    background-color: #61481c;
+    color: #fff;
+    margin-top: 10px; }
+  .titulo ul {
+    padding-top: 10px;
+    margin-left: -30px;
+    text-align: center; }
+  .titulo li {
+    display: inline;
+    list-style: none; }
+  .titulo a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 50px; }
+  .titulo a:hover {
+    color: #d07b05;
+    font-size: 150%; }
+
+@media screen and (min-width: 360px) {
   h1 {
-    font-size: 10%; } }
+    font-size: 2vw; } }
 
 /*importar estilos index*/
-/*header
-header{
-    width: 100%;
-    height: 200px;
-    .titulo{
-                text-align: center;
-        font-size: 5em;
-        width: 100%;
-        height: 100px;
-        font-family: 'Montserrat', sans-serif;
-        padding: 0 20px 0 20px;
-        
-        
-    }
-    nav{
-        width: 80%;
-        margin: auto;
-        height: 60px;
-        background-color: $col-sec;
-        color: $col-text-contraste;
-        justify-content: center;
-        
-        
-    }
-    ul{
-        padding-top: 10px;
-        margin-left: -30px;
-        justify-items: center;
-    }
-    li{
-        display: inline;
-        list-style: none;
-        
-    }
-    a{
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: $col-text-contraste;
-        padding-left: 50px;
-    }
-    a:hover{
-        color: $col-li-contraste;
-        font-size: 150%;
-    }
-}*/
 .main-index {
   width: 80%;
   height: auto;
@@ -84,43 +76,6 @@ header{
     border: solid 3px #61481c; }
 
 /*importar estilos nosotros*/
-/*header*/
-.titulo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 200px; }
-  .titulo h1 {
-    font-size: 5em;
-    width: 100%;
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 20px 0 20px;
-    text-align: center; }
-  .titulo nav {
-    width: 80%;
-    margin: 50px auto 50px auto;
-    height: 60px;
-    background-color: #61481c;
-    color: #fff;
-    margin-top: 10px; }
-  .titulo ul {
-    padding-top: 10px;
-    margin-left: -30px;
-    text-align: center; }
-  .titulo li {
-    display: inline;
-    list-style: none; }
-  .titulo a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #fff;
-    padding-left: 50px; }
-  .titulo a:hover {
-    color: #d07b05;
-    font-size: 150%; }
-
 /*estilos main y aside*/
 .nos-cont {
   width: 90%;
@@ -175,17 +130,13 @@ footer img {
   width: 25px;
   height: 25px; }
 
-@media screen and (max-width: 850px) {
-  .titulo h1 {
-    font-size: 3em; }
-  .titulo nav {
+@media screen and (max-width: 768px) {
+  nav {
     height: 50px;
     margin-top: -30px; }
-  .titulo a {
-    font-size: 1.1rem;
-    padding-left: 10px; }
-  .titulo a:hover {
-    font-size: 120%; }
+  a-font-size: 1.5vw;
+  a:hover {
+    font-size: 100%; }
   .nos-cont h2 {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -205,8 +156,9 @@ footer img {
 /*media screen 768*/
 @media screen and (max-width: 768px) {
   .titulo h1 {
-    font-size: 2.8em;
-    margin-top: 20px; }
+    margin-top: 50px; }
+  .titulo nav {
+    margin-top: -20px; }
   .nos-cont h2 {
     font-size: 1.5rem; }
   .nos-cont p {
@@ -292,11 +244,12 @@ footer img {
 /*importar estilos contacto*/
 /* formulario de contacto*/
 form {
-  width: 50%;
+  width: 40%;
   margin: auto;
   background: #61481c;
   padding: 10px 20px;
   margin-top: 20px;
+  margin-bottom: 50px;
   border-radius: 7px;
   font-family: 'Uchen', serif; }
   form h2 {
