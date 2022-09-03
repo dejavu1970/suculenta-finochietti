@@ -26,24 +26,44 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Mundo suculentas home</title>
 </head>
+
 <body>
         <!--titulo de pag y navegador-->
-        <header class="titulo">
-            <h1>Mundo Suculenta</h1>
-            <nav class="navegador">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/especies.html">Especies</a></li>
-                    <li><a href="../pages/cuidado.html">Cuidado</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+        <header class="head-nav">
+            <div class="titulo">
+                <h1 class="titulo-h1">Mundo Suculenta</h1>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a href="./index.html">
+                        <img class="logo" src="../img/logopshop.png" alt="logo" width="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/especies.html">Especies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/cuidado.html">Cuidados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
-            <!--main historia-->
         
-
+        
+        <!--main historia-->
         <main class="main-index">
             <h2 class="subtitulo">un poco de historia</h2>
             <p class="pmain">Aunque actualmente se pueden encontrar y cultivar en todo el mundo, se cree que las primeras especies surgieron hace unos 60 o 80 millones de años, más específicamente en el periodo Cretácico.
@@ -72,17 +92,16 @@
         </div>
     </main>
 
-    <!--footer con bootstrap-->
-
-    <footer class="container-fluid">
-        <div class="row">
-            <h3 class="col-6">Todos los derechos reservados</h3>
-            <a href="#instagram" class="col-1"><img src="img/instagram32 .png" alt=""></a>
-            <a href="#instagram" class="col-1"><img src="img/face32.png" alt=""></a>
-            <a href="#instagram" class="col-1"><img src="img/tweeter32.png" alt=""></a>
-            <a href="#instagram" class="col-1"><img src="img/youtube32 .png" alt=""></a>
+    <!--footer-->
+    <footer>
+        <div>
+            <p class="p-foot">Copyright - Todos Los Derechos Reservados</p>
         </div>
     </footer>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>   
     
 </body>
 </html>

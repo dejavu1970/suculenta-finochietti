@@ -4,7 +4,7 @@
     main{
     }
         .bg-titulo2{
-            font-size: 2.8em;
+            font-size: 1.5rem;
             margin: 20px 0px;
             text-transform: capitalize;
         }
@@ -13,7 +13,8 @@
         }
             .bg-subtitulo{
                 text-align: start;
-                font-size: 1.8em;
+                font-size: 1rem;
+                font-weight: bold;
                 margin: 20px 0;
                 text-transform: capitalize;
                 text-decoration: underline;
@@ -21,7 +22,7 @@
             }
             .psubt{
                 text-align: justify;
-                font-size: 1em;
+                font-size: .8rem;
                 line-height: 1.5;
                 font-family: 'Roboto', sans-serif;
             }
@@ -29,7 +30,7 @@
 
         }
             .h3{
-                font-size: 1.8em;
+                font-size: 1.2rem;
                 font-family: 'Roboto', sans-serif;
                 text-transform: capitalize;
                 background-color: #5a3b05;
@@ -42,17 +43,44 @@
             }
             .pint{
                 font-family: 'Roboto', sans-serif;
-                font-size: 1em;
+                font-size: .8rem;
                 line-height: 1.5;
                 text-align: justify;
             }
 }
 
-@media screen and (min-width: 800px){
-    header{
 
-    }
-        h1{
-            font-size: 2em;
+/*media screen 1440px*/
+@media screen and(min-width: 1440px) {
+    .container{
+        main{
         }
+            .bg-titulo2{
+                font-size: 2.5rem;
+                margin-top: 70px;
+                margin-bottom: 50px;
+            }
+            .introduccion{
+                
+            }
+                .bg-subtitulo{
+                    font-size: 1.8rem;
+                }
+                .psubt{
+                    font-size: 1.2rem;
+                    margin-bottom: 50px;
+                }
+            .contenido{
+    
+            }
+                .h3{
+                    font-size: 1.8rem;
+                }
+                img{
+                    width: 100px;
+                }
+                .pint{
+                    font-size: 1rem;
+                }
+    }
 }

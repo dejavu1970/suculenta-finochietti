@@ -8,228 +8,89 @@
 /*estilos main y aside*/
 
 .nos-cont{
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     margin: 20px auto;
     display: grid;
-    gap: 2em;
+    gap: 0.8em;
     
     .main-nos{
         grid-column: 1/2;
     }
-        h2{
-            font-size: 2.5rem;
-            text-align: center;
-        }
-        p{
+        .subt-nos{
             font-size: 1.2rem;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .p-nosotros{
+            font-size: 0.8rem;
             text-align: justify;
             padding: 5px;
             letter-spacing: 3px;
             font-weight: 3px;
+            @include bordes;
             
         }
-    .aside{
+    .aside-nos{
+        width: 20%;
     }
-        .foto-1{
-            padding: 5px;
-            margin: 2px;
-            @include borde-foto;
+        .nos-foto-1{
+            padding-left: 120%;
+            margin: 5px;
         }
-        .foto-2{
-            padding: 5px;
-            margin: 2px;
-            @include borde-foto;
+        .nos-foto-2{
+            padding-left: 120%;
+            margin: 5px;
         }
-        .foto-3{
-            padding: 5px;
-            margin: 2px;
-            @include borde-foto;
+        .nos-foto-3{
+            padding-left: 120%;
+            margin: 5px;
         }
-    footer{
-        grid-column: 1/4;
-
-    }
+        .foto-aside{
+            @include borde-foto
+        }
 }
 
-/*footer*/
-
-footer{
-    div{
-        width: 100%;
-        
-        border-top: 3px solid;
-        
-    }
-        h3{
-            font-size: 1.5rem;
-            justify-items: center;
-            text-align:center;
-            text-transform: bold; 
-            padding-top: 15px;
-        }
-            a{
-                margin-left: 5px;
-                padding-top: 20px;
-            }
-                img{
-                    margin-top: -5px;
-                    width: 25px;
-                    height: 25px;
-                }
-}
-
-@media screen and (max-width: 768px){
-        nav{
-            height: 50px;
-            margin-top: -30px;
-        }
-        ul{
-
-        }
-        li{            
-        
-        }
-        a:{
-            font-size: 1.5vw;
-        }
-        a:hover{
-            font-size: 100%;
-        }
+@media screen and (min-width: 768px) {
     .nos-cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "main aside";
+        
         .main-nos{
+            grid-area: main;
+            width: 300px;
         }
-            h2{
-                margin-top: 10px;
-                margin-bottom: 20px;
-                font-size: 1.8rem;
-            } 
-            p{
-                @include bordes;
-            }
-        .aside{
-            align-items: center;
-            margin: auto;
-        }
-            .foto-1{
-                margin-bottom: 15px;
-            }
-            .foto-2{
-                margin-bottom: 15px;
-            }
-            .foto-3{
-            }
-        footer h3{
-            font-size: 1.2em;
+
+        .aside-nos{
+            grid-area: aside;
+            width: 30%;
+            margin-top: 100px;
         }
     }
 }
 
-/*media screen 768*/
-
-@media screen and (max-width: 768px){
-    .titulo{
-        h1{
-            margin-top: 50px;
-        }
-        nav{
-            margin-top: -20px;
-        }
-        ul{
-
-        }
-        li{            
-        }
-        a{
-
-        }
-        a:hover{
-        }
-    }
-
+@media screen and (min-width: 1440px) {
     .nos-cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "main aside";
+        
         .main-nos{
+            width: 700px;
         }
-            h2{
-                font-size: 1.5rem;
-            } 
-            p{
-                @include bordes;
+            .subt-nos{
+                font-size: 2rem;
+            }
+            .p-nosotros{
                 font-size: 1.1rem;
+                letter-spacing: 1;
+                line-height: 1.8;
             }
-        .aside{
-            align-items: center;
-            margin: auto;
-        }
-            .foto-1{
-                margin-bottom: 15px;
-            }
-            .foto-2{
-                margin-bottom: 15px;
-            }
-            .foto-3{
-        
-            }
-        footer h3{
-            font-size: 1.2em;
+        .aside-nos{
+            width: 50%;
+            margin-top: 70px;
         }
     }
 }
-
-/*media screen 650*/
-
-@media screen and (max-width: 650px){
-    .titulo{
-        h1{
-            font-size: 2.6em;
-            margin-top: 20px;
-        }
-        nav{
-
-        }
-        ul{
-
-        }
-        li{            
-        }
-        a{
-
-        }
-        a:hover{
-        }
-    }
-
-    .nos-cont{
-        .main-nos{
-            grid-column: 1/4;
-        }
-            h2{
-                font-size: 1.5rem;
-            } 
-            p{
-                @include bordes;
-                font-size: 1.1rem;
-            }
-        .aside{
-            
-            margin: auto;
-            grid-column: 1/4;
-        }
-            .foto-1{
-                justify-content: self-start;
-                margin-bottom: 15px;
-                
-            }
-            .foto-2{
-                margin-bottom: 15px;
-            }
-            .foto-3{
-        
-            }
-        footer h3{
-            font-size: 1.2em;
-        }
-    }
-}
-
-

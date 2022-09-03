@@ -9,48 +9,89 @@ body {
   width: 100vw;
   height: 100vh; }
 
-/*header*/
-.titulo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 200px; }
-  .titulo h1 {
-    font-size: 5vw;
-    width: 100%;
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 20px 0 20px;
-    text-align: center; }
-  .titulo nav {
-    width: 80%;
-    margin: 50px auto 50px auto;
-    height: 60px;
-    background-color: #61481c;
-    color: #fff;
-    margin-top: 10px; }
-  .titulo ul {
-    padding-top: 10px;
-    margin-left: -30px;
-    text-align: center; }
-  .titulo li {
-    display: inline;
-    list-style: none; }
-  .titulo a {
-    font-size: 2vw;
-    text-decoration: none;
-    color: #fff;
-    padding-left: 50px; }
-  .titulo a:hover {
-    color: #d07b05;
-    font-size: 150%; }
+.cont-cuidados {
+  width: 75%;
+  margin: auto; }
 
-@media screen and (min-width: 360px) {
-  h1 {
-    font-size: 2vw; } }
+.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
+.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
+  float: right;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
+/*header*/
+.head-nav .titulo {
+  text-align: center;
+  margin: 20px 0 20px 0; }
+
+.head-nav .navbar {
+  background-color: #61481c;
+  align-content: end; }
+
+.head-nav #navbarNav {
+  text-align: center;
+  justify-content: center; }
+
+.head-nav .nav-link {
+  color: #c0a26f;
+  font-size: x-large; }
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 80%;
+    margin: auto; }
+  .titulo-h1 {
+    font-size: 3rem; }
+  .navbar {
+    height: 100px; }
+  .logo {
+    width: 150px; }
+  .nav-link {
+    font-size: 3rem; } }
+
+@media screen and (min-width: 1440px) {
+  .titulo-h1 {
+    font-size: 5rem; }
+  .navbar {
+    height: 120px; }
+  .logo {
+    width: 250px; }
+  .nav-item {
+    padding-left: 30px; }
+  .nav-link {
+    font-size: 2rem; } }
 
 /*importar estilos index*/
+.cont-cuidados {
+  width: 75%;
+  margin: auto; }
+
+.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
+.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
+  float: right;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
 .main-index {
   width: 80%;
   height: auto;
@@ -59,154 +100,148 @@ body {
     text-transform: capitalize;
     text-align: center;
     padding: 30px;
-    font-size: 3.2rem;
+    font-size: 1.5rem;
     text-decoration: dotted; }
   .main-index .pmain {
     font-family: "Montserrat", sans-serif;
     text-align: justify;
     border: solid 3px #61481c;
-    padding: 15px; }
+    padding: 15px;
+    font-size: 0.8rem; }
   .main-index .cajadefotos {
     display: flex;
     justify-content: space-evenly;
     margin: 30px;
-    padding: 30px; }
+    padding: 30px;
+    column-gap: 20px; }
+  .main-index .foto1 {
+    width: 60px;
+    height: 60px; }
+  .main-index .foto2 {
+    width: 60px;
+    height: 60px; }
+  .main-index .foto3 {
+    width: 60px;
+    height: 60px; }
+  .main-index .foto4 {
+    width: 60px;
+    height: 60px; }
   .main-index .pfoto {
     text-align: center;
-    border: solid 3px #61481c; }
+    font-style: oblique;
+    font-size: .6em; }
+
+/*footer*/
+footer {
+  text-align: center;
+  border-top: 2px solid; }
+
+.p-foot {
+  font-size: .8rem;
+  font-weight: bold;
+  padding-top: 10px; }
+
+@media screen and (min-width: 768px) {
+  .main-index .subtitulo {
+    font-size: 2.2rem;
+    text-decoration: underline; }
+  .main-index .pmain {
+    font-size: 1.2rem; }
+  .main-index .foto1 {
+    width: 90px;
+    height: 90px; }
+  .main-index .foto2 {
+    width: 90px;
+    height: 90px; }
+  .main-index .foto3 {
+    width: 90px;
+    height: 90px; }
+  .main-index .foto4 {
+    width: 90px;
+    height: 90px; }
+  .main-index .pfoto {
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: .9em; }
+  .p-foot {
+    font-size: 1.2rem; } }
 
 /*importar estilos nosotros*/
 /*estilos main y aside*/
 .nos-cont {
-  width: 90%;
+  width: 80%;
   max-width: 1000px;
   margin: 20px auto;
   display: grid;
-  gap: 2em; }
+  gap: 0.8em; }
   .nos-cont .main-nos {
     grid-column: 1/2; }
-  .nos-cont h2 {
-    font-size: 2.5rem;
-    text-align: center; }
-  .nos-cont p {
+  .nos-cont .subt-nos {
     font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .nos-cont .p-nosotros {
+    font-size: 0.8rem;
     text-align: justify;
     padding: 5px;
     letter-spacing: 3px;
-    font-weight: 3px; }
-  .nos-cont .foto-1 {
-    padding: 5px;
-    margin: 2px;
-    border: 2px solid black; }
-  .nos-cont .foto-2 {
-    padding: 5px;
-    margin: 2px;
-    border: 2px solid black; }
-  .nos-cont .foto-3 {
-    padding: 5px;
-    margin: 2px;
-    border: 2px solid black; }
-  .nos-cont footer {
-    grid-column: 1/4; }
-
-/*footer*/
-footer div {
-  width: 100%;
-  border-top: 3px solid; }
-
-footer h3 {
-  font-size: 1.5rem;
-  justify-items: center;
-  text-align: center;
-  text-transform: bold;
-  padding-top: 15px; }
-
-footer a {
-  margin-left: 5px;
-  padding-top: 20px; }
-
-footer img {
-  margin-top: -5px;
-  width: 25px;
-  height: 25px; }
-
-@media screen and (max-width: 768px) {
-  nav {
-    height: 50px;
-    margin-top: -30px; }
-  a-font-size: 1.5vw;
-  a:hover {
-    font-size: 100%; }
-  .nos-cont h2 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 1.8rem; }
-  .nos-cont p {
+    font-weight: 3px;
     border: solid 3px #61481c; }
-  .nos-cont .aside {
-    align-items: center;
-    margin: auto; }
-  .nos-cont .foto-1 {
-    margin-bottom: 15px; }
-  .nos-cont .foto-2 {
-    margin-bottom: 15px; }
-  .nos-cont footer h3 {
-    font-size: 1.2em; } }
+  .nos-cont .aside-nos {
+    width: 20%; }
+  .nos-cont .nos-foto-1 {
+    padding-left: 120%;
+    margin: 5px; }
+  .nos-cont .nos-foto-2 {
+    padding-left: 120%;
+    margin: 5px; }
+  .nos-cont .nos-foto-3 {
+    padding-left: 120%;
+    margin: 5px; }
+  .nos-cont .foto-aside {
+    border: 2px solid black; }
 
-/*media screen 768*/
-@media screen and (max-width: 768px) {
-  .titulo h1 {
-    margin-top: 50px; }
-  .titulo nav {
-    margin-top: -20px; }
-  .nos-cont h2 {
-    font-size: 1.5rem; }
-  .nos-cont p {
-    border: solid 3px #61481c;
-    font-size: 1.1rem; }
-  .nos-cont .aside {
-    align-items: center;
-    margin: auto; }
-  .nos-cont .foto-1 {
-    margin-bottom: 15px; }
-  .nos-cont .foto-2 {
-    margin-bottom: 15px; }
-  .nos-cont footer h3 {
-    font-size: 1.2em; } }
+@media screen and (min-width: 768px) {
+  .nos-cont {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main aside"; }
+    .nos-cont .main-nos {
+      grid-area: main;
+      width: 300px; }
+    .nos-cont .aside-nos {
+      grid-area: aside;
+      width: 30%;
+      margin-top: 100px; } }
 
-/*media screen 650*/
-@media screen and (max-width: 650px) {
-  .titulo h1 {
-    font-size: 2.6em;
-    margin-top: 20px; }
-  .nos-cont .main-nos {
-    grid-column: 1/4; }
-  .nos-cont h2 {
-    font-size: 1.5rem; }
-  .nos-cont p {
-    border: solid 3px #61481c;
-    font-size: 1.1rem; }
-  .nos-cont .aside {
-    margin: auto;
-    grid-column: 1/4; }
-  .nos-cont .foto-1 {
-    justify-content: self-start;
-    margin-bottom: 15px; }
-  .nos-cont .foto-2 {
-    margin-bottom: 15px; }
-  .nos-cont footer h3 {
-    font-size: 1.2em; } }
+@media screen and (min-width: 1440px) {
+  .nos-cont {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main aside"; }
+    .nos-cont .main-nos {
+      width: 700px; }
+    .nos-cont .subt-nos {
+      font-size: 2rem; }
+    .nos-cont .p-nosotros {
+      font-size: 1.1rem;
+      letter-spacing: 1;
+      line-height: 1.8; }
+    .nos-cont .aside-nos {
+      width: 50%;
+      margin-top: 70px; } }
 
 /*importar estilos especies*/
 /*main especies*/
 .container .bg-titulo2 {
-  font-size: 2.8em;
+  font-size: 1.5rem;
   margin: 20px 0px;
   text-transform: capitalize; }
 
 .container .bg-subtitulo {
   text-align: start;
-  font-size: 1.8em;
+  font-size: 1rem;
+  font-weight: bold;
   margin: 20px 0;
   text-transform: capitalize;
   text-decoration: underline;
@@ -214,12 +249,12 @@ footer img {
 
 .container .psubt {
   text-align: justify;
-  font-size: 1em;
+  font-size: .8rem;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif; }
 
 .container .h3 {
-  font-size: 1.8em;
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
   background-color: #5a3b05;
@@ -232,19 +267,111 @@ footer img {
 
 .container .pint {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: .8rem;
   line-height: 1.5;
   text-align: justify; }
 
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 2em; } }
+/*media screen 1440px*/
+@media screen and (min-width: 1440px) {
+  .container .bg-titulo2 {
+    font-size: 2.5rem;
+    margin-top: 70px;
+    margin-bottom: 50px; }
+  .container .bg-subtitulo {
+    font-size: 1.8rem; }
+  .container .psubt {
+    font-size: 1.2rem;
+    margin-bottom: 50px; }
+  .container .h3 {
+    font-size: 1.8rem; }
+  .container img {
+    width: 100px; }
+  .container .pint {
+    font-size: 1rem; } }
 
 /*importar estilos cuidados*/
+.cont-cuidados .feng-cuidados {
+  margin-top: 50px; }
+
+.cont-cuidados .sub-intro {
+  font-size: 1.2rem;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-transform: capitalize; }
+
+.cont-cuidados .img-intro {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  width: 130px;
+  height: 100px; }
+
+.cont-cuidados .p-cuidado {
+  text-align: justify;
+  font-size: .8rem;
+  margin-bottom: 25px; }
+
+.cont-cuidados .enc-cuidado {
+  font-size: 1rem;
+  background-color: #63632d;
+  text-align: center;
+  color: #fff; }
+
+.cont-cuidados .img-feng {
+  border: 2px solid black;
+  width: 250px;
+  height: 150px;
+  margin-bottom: 60px;
+  margin-left: 10px; }
+
+/*media screen 768px*/
+@media screen and (min-width: 768px) {
+  .cont-cuidados {
+    width: 80%;
+    margin: auto; }
+    .cont-cuidados .sub-intro {
+      font-size: 1.8rem;
+      text-align: center; }
+    .cont-cuidados .img-intro {
+      margin-top: 5px; }
+    .cont-cuidados .p-cuidado {
+      font-size: 1.1rem;
+      margin-bottom: 60px;
+      letter-spacing: 3px;
+      line-height: 1.8em; }
+    .cont-cuidados .enc-cuidado {
+      font-size: 1.5rem;
+      background-color: #63632d;
+      text-align: center;
+      color: #fff; }
+    .cont-cuidados .img-feng {
+      width: 480px;
+      height: 320px; }
+    .cont-cuidados .img-cuidado-crasulla {
+      width: 100px;
+      height: 100px; }
+    .cont-cuidados .img-cuidado-ovata {
+      width: 100px;
+      height: 100px; }
+    .cont-cuidados .img-cuidado-echeverria {
+      width: 100px;
+      height: 100px; }
+    .cont-cuidados .img-cuidado-sabila {
+      width: 100px;
+      height: 100px; }
+    .cont-cuidados .img-cuidado-cactus {
+      width: 100px;
+      height: 100px; } }
+
+@media screen and (min-width: 1440px) {
+  .cont-cuidados .img-feng {
+    margin-left: 25%; } }
+
 /*importar estilos contacto*/
 /* formulario de contacto*/
 form {
-  width: 40%;
+  width: 100%;
   margin: auto;
   background: #61481c;
   padding: 10px 20px;
@@ -255,32 +382,41 @@ form {
   form h2 {
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.2rem;
     margin-bottom: 20px; }
   form input, form textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
-    font-size: 17px;
+    font-size: .8rem;
     border: none; }
   form textarea {
     min-height: 100px;
     max-height: 200px;
     max-width: 100%; }
   form #boton {
-    background: #fff;
     padding: 20px;
-    font-size: 1.2em; }
-  form #boton:hover {
-    background-color: #F3E0B5;
-    cursor: pointer; }
+    font-size: 1rem; }
 
-@media screen and (max-width: 768px) {
-  form {
+/*media screen 768px*/
+@media screen and (min-width: 768px) {
+  .contacto form {
+    width: 80%;
+    height: 500px;
     background-color: #66532e; }
-  #boton {
+  .contacto #boton {
     background: #fff;
     padding: 20px;
-    font-size: 1.2em; }
-  #boton:hover {
-    background-color: #f4c24d; } }
+    font-size: 1.2em; } }
+
+/*media screen 1440px*/
+@media screen and (min-width: 768px) {
+  .contacto form {
+    width: 50%;
+    height: 500px; }
+  .contacto h2 {
+    font-size: 1.5rem; }
+  .contacto input, .contacto textarea {
+    font-size: 1rem; }
+  .contacto #boton {
+    font-size: 1.5em; } }

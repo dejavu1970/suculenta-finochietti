@@ -3,7 +3,7 @@
 /* formulario de contacto*/
 
 form{
-    width: 40%;
+    width: 100%;
     margin: auto;
     background:$col-sec;
     padding: 10px 20px;
@@ -14,14 +14,14 @@ form{
     h2{
         color: $col-text-contraste;
         text-align: center;
-        font-size: 30px;
+        font-size: 1.2rem;
         margin-bottom: 20px;
     }
     input, textarea{
         width: 100%;
         margin-bottom: 20px;
         padding: 7px;
-        font-size: 17px;
+        font-size: .8rem;
         border: none;
     }
     textarea{
@@ -30,30 +30,46 @@ form{
         max-width: 100%;
     }
     #boton{
-        background: $col-text-contraste;
         padding: 20px;
-        font-size: 1.2em;
-    }
-        #boton:hover{
-        background-color: map-get($map: $bg-form-xl, $key:bghovxl );
-        cursor: pointer;
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width:768px){
+/*media screen 768px*/
 
-    form{
-        background-color: map-get($map: $bg-form-med, $key: bgmed)
-    }
-        #boton{
-            background: $col-text-contraste;
-            padding: 20px;
-            font-size: 1.2em;
+@media screen and (min-width:768px){
+    .contacto{
+        form{
+            width: 80%;
+            height: 500px;
+            background-color: map-get($map: $bg-form-med, $key: bgmed);
         }
-            #boton:hover{
-                background-color: map-get($map: $bg-form-med, $key: bghovmed );
+            #boton{
+                background: $col-text-contraste;
+                padding: 20px;
+                font-size: 1.2em;
             }
-        
+    }
+}
+
+/*media screen 1440px*/
+
+@media screen and (min-width:768px){
+    .contacto{
+        form{
+            width: 50%;
+            height: 500px;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        input, textarea{
+            font-size: 1rem;
+        }
+            #boton{
+                font-size: 1.5em;
+            }
+    }
 }
 
 

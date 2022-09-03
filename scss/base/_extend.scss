@@ -1,6 +1,25 @@
 
 //creando stend para navegador
 
-%nav{
-    
+%widt{
+    width: 75%;
+    margin: auto;
 }
+
+%foto1{
+    float: left;
+    border: 2px solid black;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+%foto2{
+    float: right;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+
