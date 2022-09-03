@@ -3,24 +3,25 @@
 /* formulario de contacto*/
 
 form{
-    width: auto;
+    width: 100%;
     margin: auto;
     background:$col-sec;
     padding: 10px 20px;
     margin-top: 20px;
+    margin-bottom: 50px;
     border-radius: 7px;
     font-family: 'Uchen', serif;
     h2{
         color: $col-text-contraste;
         text-align: center;
-        font-size: 30px;
+        font-size: 1.2rem;
         margin-bottom: 20px;
     }
     input, textarea{
         width: 100%;
         margin-bottom: 20px;
         padding: 7px;
-        font-size: 17px;
+        font-size: .8rem;
         border: none;
     }
     textarea{
@@ -29,15 +30,45 @@ form{
         max-width: 100%;
     }
     #boton{
-        background: $col-text-contraste;
         padding: 20px;
-        font-size: 1.2em;
+        font-size: 1rem;
     }
-    &:hover{
-        background-color: $col-prin;
-        color:$col-text-contraste;
-        font-size: 2em;
-        cursor: pointer;
+}
+
+/*media screen 768px*/
+
+@media screen and (min-width:768px){
+    .contacto{
+        form{
+            width: 80%;
+            height: 500px;
+            background-color: map-get($map: $bg-form-med, $key: bgmed);
+        }
+            #boton{
+                background: $col-text-contraste;
+                padding: 20px;
+                font-size: 1.2em;
+            }
+    }
+}
+
+/*media screen 1440px*/
+
+@media screen and (min-width:768px){
+    .contacto{
+        form{
+            width: 50%;
+            height: 500px;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        input, textarea{
+            font-size: 1rem;
+        }
+            #boton{
+                font-size: 1.5em;
+            }
     }
 }
 

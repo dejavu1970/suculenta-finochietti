@@ -1,0 +1,72 @@
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/mapas";
+@import "../base/listas";
+@import "../base/extend";
+
+/*header*/
+
+.head-nav{
+
+
+    .titulo{
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .navbar{
+        background-color: $col-sec;
+        align-content: end;
+    }
+        #navbarNav{
+            text-align: center;
+            justify-content: center;
+        }
+        .nav-item{    
+        }
+        .nav-link{
+            color:$col-prin;
+            font-size: x-large;
+        }
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    body{
+        max-width: 80%;
+        margin: auto;
+    }
+        .titulo-h1{
+            font-size: 3rem;
+        }
+        .navbar{
+            height: 100px;
+        }
+        .logo{
+            width: 150px;
+        }
+        .nav-link{
+            font-size: 3rem;
+        }
+}
+
+@media screen and (min-width: 1440px)
+{
+    .titulo-h1{
+        font-size: 5rem;
+    }
+    .navbar{
+        height: 120px;
+    }
+    .logo{
+        width: 250px;
+    }
+    .nav-item{
+        padding-left: 30px;
+    }
+    .nav-link{
+        font-size: 2rem;    
+    }
+}

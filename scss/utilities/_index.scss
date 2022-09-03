@@ -1,3 +1,106 @@
-/*estilo del header*/
+
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/mapas";
+@import "../base/listas";
+@import "../base/extend";
 
 
+
+
+.main-index{
+    @include wid-heig;
+    .subtitulo{
+        text-transform: capitalize;
+        text-align: center;
+        padding: 30px;
+        font-size: 1.5rem;
+        text-decoration: dotted;
+    }
+    .pmain{
+        font-family: $texto-parrafo;
+        text-align: justify;
+        @include bordes;
+        padding: 15px;
+        font-size: 0.8rem;
+
+    }
+    .cajadefotos{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px;
+        padding: 30px;
+        column-gap: 20px;
+
+    }
+    .foto1{
+        width: 60px;
+        height: 60px;
+    }
+    .foto2{
+        width: 60px;
+        height: 60px;
+    }
+    .foto3{
+        width: 60px;
+        height: 60px;
+    }
+    .foto4{
+        width: 60px;
+        height: 60px;
+    }
+    .pfoto{
+        text-align: center;
+        font-style: oblique;
+        font-size: .6em;
+    }
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    border-top: 2px solid;
+}
+    .p-foot{
+        font-size: .8rem;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+@media screen and (min-width: 768px) {
+    .main-index{
+        .subtitulo{
+            font-size: 2.2rem;
+            text-decoration: underline;
+        }
+        .pmain{
+            font-size: 1.2rem;
+        }
+        .foto1{
+            width: 90px;
+            height: 90px;
+        }
+        .foto2{
+            width: 90px;
+            height: 90px;
+        }
+        .foto3{
+            width: 90px;
+            height: 90px;
+        }
+        .foto4{
+            width: 90px;
+            height: 90px;
+        }
+        .pfoto{
+            text-align: center;
+            font-style: oblique;
+            font-weight: bold;
+            font-size: .9em;
+        }
+    }
+    .p-foot{
+        font-size: 1.2rem;
+    }
+}

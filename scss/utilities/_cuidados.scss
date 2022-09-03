@@ -1,0 +1,121 @@
+.cont-cuidados{
+    @extend %widt;
+
+
+    .feng-cuidados{
+        margin-top: 50px;
+    }
+        .sub-intro{
+            font-size: 1.2rem;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+        .img-intro{
+            float: left;
+            border: 2px solid black;
+            margin-right: 10px;
+            width: 130px;
+            height: 100px;
+        }
+        .p-cuidado{
+            text-align: justify;
+            font-size: .8rem;
+            margin-bottom: 25px;
+        }
+        .enc-cuidado{
+            font-size: 1rem;
+            background-color: $col-fondo-texto;
+            text-align: center;
+            color: $col-text-contraste;
+        }
+        .img-feng{
+            border: 2px solid black;
+            width: 250px;
+            height: 150px;
+            margin-bottom: 60px;
+            margin-left: 10px
+        }
+        .img-cuidado-crasulla{
+            @extend %foto1;
+        }
+        .img-cuidado-ovata{
+            @extend %foto2;
+        }
+        .img-cuidado-echeverria{
+            @extend %foto1;
+        }
+        .img-cuidado-sabila{
+            @extend %foto2;
+        }
+        .img-cuidado-cactus{
+            @extend %foto1;
+        }
+}
+
+/*media screen 768px*/
+
+@media screen and(min-width: 768px) {
+    .cont-cuidados{
+        width: 80%;
+        margin: auto;
+
+        .feng-cuidados{
+        }
+            .sub-intro{
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            .img-intro{
+                margin-top: 5px;
+            }
+            .p-cuidado{
+                font-size: 1.1rem;
+                margin-bottom: 60px;
+                letter-spacing: 3px;
+                line-height: 1.8em;
+            }
+            .enc-cuidado{
+                font-size: 1.5rem;
+                background-color: $col-fondo-texto;
+                text-align: center;
+                color: $col-text-contraste;
+            }
+            .img-feng{
+                width: 480px;
+                height: 320px;
+            }
+            .feng-tipos{
+                
+            }
+            .img-cuidado-crasulla{
+                width: 100px;
+                height: 100px;
+            }
+            .img-cuidado-ovata{
+                width: 100px;
+                height: 100px;
+            }
+            .img-cuidado-echeverria{
+                width: 100px;
+                height: 100px;
+            }
+            .img-cuidado-sabila{
+                width: 100px;
+                height: 100px;
+            }
+            .img-cuidado-cactus{
+                width: 100px;
+                height: 100px;
+            }
+    }   
+}
+
+@media screen and (min-width: 1440px) {
+    .cont-cuidados{
+        .img-feng{
+            margin-left: 25%;
+        }
+    }
+}

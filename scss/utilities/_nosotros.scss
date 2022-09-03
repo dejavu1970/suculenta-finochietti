@@ -1,0 +1,96 @@
+@import "base/variables";
+@import "base/mixin";
+@import "base/mapas";
+@import "base/listas";
+
+
+
+/*estilos main y aside*/
+
+.nos-cont{
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 0.8em;
+    
+    .main-nos{
+        grid-column: 1/2;
+    }
+        .subt-nos{
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .p-nosotros{
+            font-size: 0.8rem;
+            text-align: justify;
+            padding: 5px;
+            letter-spacing: 3px;
+            font-weight: 3px;
+            @include bordes;
+            
+        }
+    .aside-nos{
+        width: 20%;
+    }
+        .nos-foto-1{
+            padding-left: 120%;
+            margin: 5px;
+        }
+        .nos-foto-2{
+            padding-left: 120%;
+            margin: 5px;
+        }
+        .nos-foto-3{
+            padding-left: 120%;
+            margin: 5px;
+        }
+        .foto-aside{
+            @include borde-foto
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .nos-cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "main aside";
+        
+        .main-nos{
+            grid-area: main;
+            width: 300px;
+        }
+
+        .aside-nos{
+            grid-area: aside;
+            width: 30%;
+            margin-top: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nos-cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "main aside";
+        
+        .main-nos{
+            width: 700px;
+        }
+            .subt-nos{
+                font-size: 2rem;
+            }
+            .p-nosotros{
+                font-size: 1.1rem;
+                letter-spacing: 1;
+                line-height: 1.8;
+            }
+        .aside-nos{
+            width: 50%;
+            margin-top: 70px;
+        }
+    }
+}
