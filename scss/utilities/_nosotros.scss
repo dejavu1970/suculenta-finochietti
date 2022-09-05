@@ -5,7 +5,7 @@
 
 
 
-/*estilos main y aside*/
+/*estilos nosotros*/
 
 .nos-cont{
     width: 80%;
@@ -53,6 +53,19 @@
 }
 
 @media screen and (min-width: 768px) {
+    .titulo-h1{
+        font-size: 3rem;
+    }
+    .navbar{
+        height: 100px;
+    }
+        .logo{
+        width: 150px;
+        }
+        .nav-link{
+        font-size: 3rem;
+        }
+    
     .nos-cont{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -72,6 +85,23 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .titulo-h1{
+        font-size: 5rem;
+    }
+    .navbar{
+        height: 120px;
+    }
+        .logo{
+            width: 250px;
+        }
+        .nav-item{
+            padding-left: 30px;
+        }
+        .nav-link{
+            font-size: 2rem;    
+        }
+    
+    
     .nos-cont{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 

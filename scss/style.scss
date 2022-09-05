@@ -1,13 +1,10 @@
 //importando archivos secundarios
 
 @import "base/variables";
-<<<<<<< HEAD
-=======
 @import "base/mixin";
 @import "base/listas";
 @import "base/mapas";
-
->>>>>>> sass
+@import "base/extend";
 
 
 /*reset*/
@@ -17,13 +14,14 @@
     box-sizing: border-box;
 }
 
+/*estilo gral body*/
 body{
     background-color: $col-prin;
     width: 100vw;
     height: 100vh;
 }
 
-
+/*importar estilos header*/
 @import "utilities/header";
 
 

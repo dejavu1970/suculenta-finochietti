@@ -1,15 +1,4 @@
-/*reset*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background-color: #c0a26f;
-  width: 100vw;
-  height: 100vh; }
-
-.cont-cuidados {
+/*.cont-cuidados {
   width: 75%;
   margin: auto; }
 
@@ -27,7 +16,40 @@ body {
   margin-left: 10px;
   margin-top: 5px;
   width: 60px;
+  height: 60px; }*/
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilo gral body*/
+body {
+  background-color: #c0a26f;
+  width: 100vw;
+  height: 100vh; }
+
+/*importar estilos header*/
+/*.cont-cuidados {
+  width: 75%;
+  margin: auto; }
+
+.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 60px;
   height: 60px; }
+
+.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
+  float: right;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }*/
 
 /*header*/
 .head-nav .titulo {
@@ -72,7 +94,7 @@ body {
     font-size: 2rem; } }
 
 /*importar estilos index*/
-.cont-cuidados {
+/*.cont-cuidados {
   width: 75%;
   margin: auto; }
 
@@ -90,7 +112,7 @@ body {
   margin-left: 10px;
   margin-top: 5px;
   width: 60px;
-  height: 60px; }
+  height: 60px; }*/
 
 .main-index {
   width: 80%;
@@ -168,7 +190,7 @@ footer {
     font-size: 1.2rem; } }
 
 /*importar estilos nosotros*/
-/*estilos main y aside*/
+/*estilos nosotros*/
 .nos-cont {
   width: 80%;
   max-width: 1000px;
@@ -204,6 +226,14 @@ footer {
     border: 2px solid black; }
 
 @media screen and (min-width: 768px) {
+  .titulo-h1 {
+    font-size: 3rem; }
+  .navbar {
+    height: 100px; }
+  .logo {
+    width: 150px; }
+  .nav-link {
+    font-size: 3rem; }
   .nos-cont {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "main aside"; }
@@ -216,6 +246,16 @@ footer {
       margin-top: 100px; } }
 
 @media screen and (min-width: 1440px) {
+  .titulo-h1 {
+    font-size: 5rem; }
+  .navbar {
+    height: 120px; }
+  .logo {
+    width: 250px; }
+  .nav-item {
+    padding-left: 30px; }
+  .nav-link {
+    font-size: 2rem; }
   .nos-cont {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "main aside"; }
