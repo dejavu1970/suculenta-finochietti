@@ -21,7 +21,6 @@
         @include bordes;
         padding: 15px;
         font-size: 0.8rem;
-
     }
     .cajadefotos{
         display: flex;
@@ -29,29 +28,28 @@
         margin: 30px;
         padding: 30px;
         column-gap: 20px;
-
     }
-    .foto1{
-        width: 60px;
-        height: 60px;
-    }
-    .foto2{
-        width: 60px;
-        height: 60px;
-    }
-    .foto3{
-        width: 60px;
-        height: 60px;
-    }
-    .foto4{
-        width: 60px;
-        height: 60px;
-    }
-    .pfoto{
-        text-align: center;
-        font-style: oblique;
-        font-size: .6em;
-    }
+        .foto1{
+            width: 60px;
+            height: 60px;
+        }
+        .foto2{
+            width: 60px;
+            height: 60px;
+        }
+        .foto3{
+            width: 60px;
+            height: 60px;
+        }
+        .foto4{
+            width: 60px;
+            height: 60px;
+        }
+        .pfoto{
+            text-align: center;
+            font-style: oblique;
+            font-size: .6em;
+        }
 }
 
 /*footer*/
