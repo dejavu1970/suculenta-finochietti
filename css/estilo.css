@@ -1,23 +1,3 @@
-/*.cont-cuidados {
-  width: 75%;
-  margin: auto; }
-
-.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
-  float: left;
-  border: 2px solid black;
-  margin-right: 10px;
-  margin-top: 5px;
-  width: 60px;
-  height: 60px; }
-
-.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
-  float: right;
-  border: 2px solid black;
-  margin-left: 10px;
-  margin-top: 5px;
-  width: 60px;
-  height: 60px; }*/
-
 /*reset*/
 * {
   margin: 0;
@@ -31,27 +11,6 @@ body {
   height: 100vh; }
 
 /*importar estilos header*/
-/*.cont-cuidados {
-  width: 75%;
-  margin: auto; }
-
-.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
-  float: left;
-  border: 2px solid black;
-  margin-right: 10px;
-  margin-top: 5px;
-  width: 60px;
-  height: 60px; }
-
-.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
-  float: right;
-  border: 2px solid black;
-  margin-left: 10px;
-  margin-top: 5px;
-  width: 60px;
-  height: 60px; }*/
-
-/*header*/
 .head-nav .titulo {
   text-align: center;
   margin: 20px 0 20px 0; }
@@ -94,26 +53,6 @@ body {
     font-size: 2rem; } }
 
 /*importar estilos index*/
-/*.cont-cuidados {
-  width: 75%;
-  margin: auto; }
-
-.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
-  float: left;
-  border: 2px solid black;
-  margin-right: 10px;
-  margin-top: 5px;
-  width: 60px;
-  height: 60px; }
-
-.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
-  float: right;
-  border: 2px solid black;
-  margin-left: 10px;
-  margin-top: 5px;
-  width: 60px;
-  height: 60px; }*/
-
 .main-index {
   width: 80%;
   height: auto;
