@@ -2,7 +2,7 @@
 @import "../base/mixin";
 @import "../base/mapas";
 @import "../base/listas";
-@import "../base/extend";
+
 
 /*header*/
 
@@ -60,13 +60,13 @@
     .navbar{
         height: 120px;
     }
-    .logo{
-        width: 250px;
-    }
-    .nav-item{
-        padding-left: 30px;
-    }
-    .nav-link{
-        font-size: 2rem;    
-    }
+        .logo{
+            width: 250px;
+        }
+            .nav-item{
+                padding-left: 30px;
+            }
+            .nav-link{
+                font-size: 2rem;    
+            }
 }
