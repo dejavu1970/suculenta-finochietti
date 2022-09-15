@@ -1,4 +1,3 @@
-
 $col-prin:rgb(192, 162, 111);
 $col-sec:rgb(97, 72, 28);
 $col-texto:black;
@@ -7,4 +6,5 @@ $col-li-contraste: rgb(208, 123, 5);
 $col-bordes:rgb(97, 72, 28);
 $texto-parrafo: 'Montserrat', sans-serif;
 $col-fondo-texto:rgb(99, 99, 45);
-
+$col-sombra: 5px 5px 5px 5px $col-bordes;
+$col-sombra-derecha:-5px 5px 5px 5px $col-bordes;

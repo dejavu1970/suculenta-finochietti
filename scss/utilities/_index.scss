@@ -1,9 +1,10 @@
 
+
 @import "../base/variables";
 @import "../base/mixin";
 @import "../base/mapas";
 @import "../base/listas";
-
+@import "../base/extend";
 
 
 .main-index{
@@ -22,47 +23,41 @@
         padding: 15px;
         font-size: 0.8rem;
     }
-    .cajadefotos{
-        display: flex;
-        justify-content: space-evenly;
-        margin: 30px;
-        padding: 30px;
-        column-gap: 20px;
+}
+.index-cajadefotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 30px;
+
+    .card-index-foto{
+        box-shadow: $col-sombra;
+        padding: 2.5px;
+        margin: 10px 30px
     }
-        .foto1{
-            width: 60px;
-            height: 60px;
+        .card-foto{
+            width: 80px;
+            height: 80px;
+            border: .5px solid $col-sec;
         }
-        .foto2{
-            width: 60px;
-            height: 60px;
+        .intro-index-foto{
+            background-color: $col-sec;
+            height: auto;
+            
         }
-        .foto3{
-            width: 60px;
-            height: 60px;
-        }
-        .foto4{
-            width: 60px;
-            height: 60px;
-        }
-        .pfoto{
-            text-align: center;
-            font-style: oblique;
-            font-size: .6em;
-        }
+            .card-titulo{
+                font-size: .8em;
+                color: whitesmoke;
+                padding: 5px;
+                text-align: center;
+                margin-bottom: -1.5px;
+            }
 }
 
-/*footer*/
 
-footer{
-    text-align: center;
-    border-top: 2px solid;
-}
-    .p-foot{
-        font-size: .8rem;
-        font-weight: bold;
-        padding-top: 10px;
-    }
+
+
 
 @media screen and (min-width: 768px) {
     .main-index{
@@ -73,30 +68,32 @@ footer{
         .pmain{
             font-size: 1.2rem;
         }
-        .foto1{
-            width: 90px;
-            height: 90px;
-        }
-        .foto2{
-            width: 90px;
-            height: 90px;
-        }
-        .foto3{
-            width: 90px;
-            height: 90px;
-        }
-        .foto4{
-            width: 90px;
-            height: 90px;
-        }
-        .pfoto{
-            text-align: center;
-            font-style: oblique;
-            font-weight: bold;
-            font-size: .9em;
-        }
+        
     }
-    .p-foot{
-        font-size: 1.2rem;
-    }
+    .index-cajadefotos{
+        .card-index-foto{
+            margin: 30px 10px;
+        }
+            .card-foto{
+                width: 100px;
+                height: 100px;
+                    
+            }
+            
+        }
+}
+
+@media screen and (min-width: 1200px){
+    .index-cajadefotos{
+        .card-index-foto{
+            
+            padding: 2.5px;
+        }
+            .card-foto{
+                width: 120px;
+                height: 120px;
+                    
+            }
+            
+        }
 }
