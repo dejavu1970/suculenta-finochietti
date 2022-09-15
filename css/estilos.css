@@ -1,3 +1,23 @@
+.cont-cuidados {
+  width: 75%;
+  margin: auto; }
+
+.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
+.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
+  float: right;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
 /*reset*/
 * {
   margin: 0;
@@ -10,6 +30,7 @@ body {
   width: 100vw;
   height: 100vh; }
 
+/*importar estilos header*/
 /*header*/
 .head-nav .titulo {
   text-align: center;
@@ -92,6 +113,16 @@ body {
     font-style: oblique;
     font-size: .6em; }
 
+/*footer*/
+footer {
+  text-align: center;
+  border-top: 2px solid; }
+
+.p-foot {
+  font-size: .8rem;
+  font-weight: bold;
+  padding-top: 10px; }
+
 @media screen and (min-width: 768px) {
   .main-index .subtitulo {
     font-size: 2.2rem;
@@ -114,8 +145,11 @@ body {
     text-align: center;
     font-style: oblique;
     font-weight: bold;
-    font-size: .9em; }}
+    font-size: .9em; }
+  .p-foot {
+    font-size: 1.2rem; } }
 
+/*importar estilos nosotros*/
 /*estilos nosotros*/
 .nos-cont {
   width: 80%;
@@ -152,7 +186,14 @@ body {
     border: 2px solid black; }
 
 @media screen and (min-width: 768px) {
-  
+  .titulo-h1 {
+    font-size: 3rem; }
+  .navbar {
+    height: 100px; }
+  .logo {
+    width: 150px; }
+  .nav-link {
+    font-size: 3rem; }
   .nos-cont {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "main aside"; }
@@ -165,7 +206,16 @@ body {
       margin-top: 100px; } }
 
 @media screen and (min-width: 1440px) {
-  
+  .titulo-h1 {
+    font-size: 5rem; }
+  .navbar {
+    height: 120px; }
+  .logo {
+    width: 250px; }
+  .nav-item {
+    padding-left: 30px; }
+  .nav-link {
+    font-size: 2rem; }
   .nos-cont {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "main aside"; }
@@ -181,6 +231,7 @@ body {
       width: 50%;
       margin-top: 70px; } }
 
+/*importar estilos especies*/
 /*main especies*/
 .container .bg-titulo2 {
   font-size: 1.5rem;
@@ -337,6 +388,7 @@ body {
   .cont-cuidados .img-feng {
     margin-left: 25%; } }
 
+/*importar estilos contacto*/
 /* formulario de contacto*/
 form {
   width: 100%;
@@ -388,18 +440,3 @@ form {
     font-size: 1rem; }
   .contacto #boton {
     font-size: 1.5em; } }
-
-/*footer*/
-footer {
-  text-align: center;
-  border-top: 2px solid; }
-
-.p-foot {
-  font-size: .8rem;
-  font-weight: bold;
-  padding-top: 10px; }
-
-
-  @media screen and (min-width: 768px) {
-  .p-foot {
-    font-size: 1.2rem; }}
