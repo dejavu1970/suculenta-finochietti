@@ -30,6 +30,18 @@
         }
 }
 
+/*footer*/
+
+footer{
+    text-align: center;
+    border-top: 2px solid;
+}
+    .p-foot{
+        font-size: .8rem;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
 
 
 
@@ -52,7 +64,7 @@
         }
 }
 
-@media screen and (min-width: 1440px)
+@media screen and (min-width: 1200px)
 {
     .titulo-h1{
         font-size: 5rem;
@@ -69,4 +81,7 @@
             .nav-link{
                 font-size: 2rem;    
             }
+    .p-foot{
+        font-size: 1.2rem;
+    }
 }

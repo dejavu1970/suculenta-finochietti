@@ -1,3 +1,23 @@
+.cont-cuidados {
+  width: 75%;
+  margin: auto; }
+
+.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
+.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
+  float: right;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
 /*reset*/
 * {
   margin: 0;
@@ -8,7 +28,6 @@ body {
   background-color: #c0a26f;
   width: 100vw;
   height: 100vh; }
-
 
 /*header*/
 .head-nav .titulo {
@@ -27,6 +46,16 @@ body {
   color: #c0a26f;
   font-size: x-large; }
 
+/*footer*/
+footer {
+  text-align: center;
+  border-top: 2px solid; }
+
+.p-foot {
+  font-size: .8rem;
+  font-weight: bold;
+  padding-top: 10px; }
+
 @media screen and (min-width: 768px) {
   body {
     max-width: 80%;
@@ -40,7 +69,7 @@ body {
   .nav-link {
     font-size: 3rem; } }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .titulo-h1 {
     font-size: 5rem; }
   .navbar {
@@ -50,9 +79,31 @@ body {
   .nav-item {
     padding-left: 30px; }
   .nav-link {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .p-foot {
+    font-size: 1.2rem; } }
 
 /*importar estilos index*/
+.cont-cuidados {
+  width: 75%;
+  margin: auto; }
+
+.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
+.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
+  float: right;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
 .main-index {
   width: 80%;
   height: auto;
@@ -69,38 +120,30 @@ body {
     border: solid 3px #61481c;
     padding: 15px;
     font-size: 0.8rem; }
-  .main-index .cajadefotos {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-    padding: 30px;
-    column-gap: 20px; }
-  .main-index .foto1 {
-    width: 60px;
-    height: 60px; }
-  .main-index .foto2 {
-    width: 60px;
-    height: 60px; }
-  .main-index .foto3 {
-    width: 60px;
-    height: 60px; }
-  .main-index .foto4 {
-    width: 60px;
-    height: 60px; }
-  .main-index .pfoto {
+
+.index-cajadefotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 30px; }
+  .index-cajadefotos .card-index-foto {
+    box-shadow: 5px 5px 5px 5px #61481c;
+    padding: 2.5px;
+    margin: 10px 30px; }
+  .index-cajadefotos .card-foto {
+    width: 80px;
+    height: 80px;
+    border: 0.5px solid #61481c; }
+  .index-cajadefotos .intro-index-foto {
+    background-color: #61481c;
+    height: auto; }
+  .index-cajadefotos .card-titulo {
+    font-size: .8em;
+    color: whitesmoke;
+    padding: 5px;
     text-align: center;
-    font-style: oblique;
-    font-size: .6em; }
-
-/*footer*/
-footer {
-  text-align: center;
-  border-top: 2px solid; }
-
-.p-foot {
-  font-size: .8rem;
-  font-weight: bold;
-  padding-top: 10px; }
+    margin-bottom: -1.5px; }
 
 @media screen and (min-width: 768px) {
   .main-index .subtitulo {
@@ -108,25 +151,18 @@ footer {
     text-decoration: underline; }
   .main-index .pmain {
     font-size: 1.2rem; }
-  .main-index .foto1 {
-    width: 90px;
-    height: 90px; }
-  .main-index .foto2 {
-    width: 90px;
-    height: 90px; }
-  .main-index .foto3 {
-    width: 90px;
-    height: 90px; }
-  .main-index .foto4 {
-    width: 90px;
-    height: 90px; }
-  .main-index .pfoto {
-    text-align: center;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: .9em; }
-  .p-foot {
-    font-size: 1.2rem; } }
+  .index-cajadefotos .card-index-foto {
+    margin: 30px 10px; }
+  .index-cajadefotos .card-foto {
+    width: 100px;
+    height: 100px; } }
+
+@media screen and (min-width: 1200px) {
+  .index-cajadefotos .card-index-foto {
+    padding: 2.5px; }
+  .index-cajadefotos .card-foto {
+    width: 120px;
+    height: 120px; } }
 
 /*importar estilos nosotros*/
 /*estilos main y aside*/
@@ -251,6 +287,26 @@ footer {
     font-size: 1rem; } }
 
 /*importar estilos cuidados*/
+.cont-cuidados {
+  width: 75%;
+  margin: auto; }
+
+.cont-cuidados .img-cuidado-crasulla, .cont-cuidados .img-cuidado-echeverria, .cont-cuidados .img-cuidado-cactus {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
+.cont-cuidados .img-cuidado-ovata, .cont-cuidados .img-cuidado-sabila {
+  float: right;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+  height: 60px; }
+
 .cont-cuidados .feng-cuidados {
   margin-top: 50px; }
 
