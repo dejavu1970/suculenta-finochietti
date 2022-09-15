@@ -3,13 +3,12 @@
 /* formulario de contacto*/
 
 form{
-    width: 100%;
-    margin: auto;
+    width: 80%;
+    max-width: 400px;
+    margin: 50px auto;
     background:$col-sec;
     padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    border-radius: 7px;
+    border-radius: 17px;
     font-family: 'Uchen', serif;
     h2{
         color: $col-text-contraste;
@@ -30,8 +29,13 @@ form{
         max-width: 100%;
     }
     #boton{
-        padding: 20px;
-        font-size: 1rem;
+        display: block;
+        width: 120px;
+        height: auto;
+        margin: auto;
+        font-size: 1rem; 
+        color: 	black;
+        
     }
 }
 
@@ -40,21 +44,21 @@ form{
 @media screen and (min-width:768px){
     .contacto{
         form{
-            width: 80%;
-            height: 500px;
+            max-width: 650px;
+            height: auto;
             background-color: map-get($map: $bg-form-med, $key: bgmed);
         }
             #boton{
-                background: $col-text-contraste;
+                
                 padding: 20px;
                 font-size: 1.2em;
             }
     }
 }
 
-/*media screen 1440px*/
+/*media screen 1200px*/
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1200px){
     .contacto{
         form{
             width: 50%;
@@ -69,6 +73,9 @@ form{
             #boton{
                 font-size: 1.5em;
             }
+                #boton :hover{
+                    background-color: aqua;
+                }
     }
 }
 

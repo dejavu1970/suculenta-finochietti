@@ -22,12 +22,13 @@
             text-align: center;
             justify-content: center;
         }
-        .nav-item{    
+        .nav-item {    
         }
         .nav-link{
             color:$col-prin;
             font-size: x-large;
         }
+            
 }
 
 /*footer*/
@@ -78,8 +79,18 @@ footer{
             .nav-item{
                 padding-left: 30px;
             }
+            .nav-item :hover{
+                border-radius: 15px;
+                color: $col-li-contraste;
+                font-size: 200%;
+                border-right: 3px solid black;
+                border-bottom: 3px solid black;
+                border-top: 1px solid black;
+                border-left: 1px solid black;
+                
+            }
             .nav-link{
-                font-size: 2rem;    
+                
             }
     .p-foot{
         font-size: 1.2rem;
