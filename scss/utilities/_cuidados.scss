@@ -35,7 +35,8 @@
         }
         .img-feng{
             border: 2px solid black;
-            height: auto;
+            width: 100%;
+            max-height: auto;
             margin-bottom: 50px;
             
         }
@@ -100,7 +101,8 @@
                 color: $col-text-contraste;
             }
             .img-feng{
-                min-width: 720px;   
+                width: 600px;  
+                height: 400px;
             }
             .feng-beneficios{
             }
@@ -130,8 +132,7 @@
 @media screen and (min-width: 1200x) {
     .cont-cuidados{
         
-        .img-feng{
-            max-width: 800px;
+        .img-feng{ 
         }
         .feng-tipos{
         }

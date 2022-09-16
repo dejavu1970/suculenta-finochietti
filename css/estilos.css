@@ -335,7 +335,8 @@ footer {
 
 .cont-cuidados .img-feng {
   border: 2px solid black;
-  height: auto;
+  width: 100%;
+  max-height: auto;
   margin-bottom: 50px; }
 
 .cont-cuidados .feng-beneficios {
@@ -379,7 +380,8 @@ footer {
     text-align: center;
     color: #fff; }
   .cont-cuidados .img-feng {
-    min-width: 720px; }
+    width: 600px;
+    height: 400px; }
   .cont-cuidados .feng-video iframe {
     width: 750px;
     height: 480px; }
@@ -389,10 +391,6 @@ footer {
   .cont-cuidados .img-cuidado-derecha {
     width: 100px;
     height: 100px; } }
-
-@media screen and (min-width: 1200x) {
-  .cont-cuidados .img-feng {
-    max-width: 800px; } }
 
 /*importar estilos contacto*/
 /* formulario de contacto*/
